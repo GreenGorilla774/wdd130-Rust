@@ -1,5 +1,10 @@
-h1 {
-    color: #E5522B;
+@import url('https://fonts.googleapis.com');
+
+
+#wrapper {
+    border: 3px solid #4CAF50;
+    width: 50%;
+    margin: 0 auto;
 }
 
 #span{ 
@@ -14,81 +19,82 @@ body {
 }
 
 header {
-    position: fixed;
+    display: flex;
     height: 110px;
     width: 100%;
-    top: 0;
-    left: 0;
     z-index: 100;
     padding: 10px 0;
     box-sizing: border-box;
-    background-color: #F9F6EE;
+    justify-content: space-between;
 }
 
-header img {
-    position: absolute;
-    left: 1px;
-    top: 50%;
-    transform: translateY(-50%);
-
-    width: 110px;
-    height: 110px;
-}
-
-h1 {
-    text-align: center;
-    margin: 0;
-    line-height: 80px;
-}
-
-
-
-nav {
-    width: 100%;
-    background: #4CAF50;
-    position: fixed;
-    top: 110px;
-    left: 0;
-    height: 40px;
-    z-index: 99;
-}
-
-nav ul {
+#navigation_bar {
     display: flex;
+    list-style: none;
+    margin: 15px;
+    padding: 10px;
     justify-content: space-evenly;
-    list-style-type: none;
-    margin: 0;
-}
-
-nav li {
-    display: flex;
-    height: 40px;
-    align-items: center;
-}
-
-nav a {
-    color: #FF7043;
-    text-decoration: none;
-    display: block;
-    padding: 15px 25px;
-    text-shadow: 1px 1px #bf5837;
-}
-
-nav li:hover {
-    background-color: #FF7043;
+    background-color: #4CAF50;
     border-radius: 20px;
 }
 
-nav a:hover {
+#navigation_bar li a {
+    display: block;
+    padding: 10px 10px;
+
+    text-decoration: none;
+    color: #2C3E50;
+}
+
+#navigation_bar li a:hover {
+    background-color: #E5522B;
     color: #4CAF50;
+    text-shadow: 1px 1px 1px #36670C;
+    border-radius: 10px;
+}
+
+header img {
+
+    width: 100px;
+    height: 100px;
 }
 
 
 #main {
-    padding-top: 60px;
     text-align: center;
     margin: 100px;
+    display: flex;
+    justify-content: center;
 
+}
+
+#learn {
+    font-family: "Open Sans", sans-serif;
+}
+
+#eating {
+    color: #4CAF50;
+    font-family: "Montserrat", sans-serif ;
+}
+
+#main_wrap {
+    border: 3px solid #FF7043;
+    width: 50%;
+}
+
+#btn {
+    padding: 5px;
+    margin: 15px;
+    color: #4CAF50;
+    border-radius: 10px;
+    border: 2px solid #2C3E50;
+    transition-duration: 0.2s;
+    
+}
+
+#btn:hover {
+    background-color: #FF7043;
+    text-shadow: 1px 1px 1px #36670C;
 }
 
 footer {
