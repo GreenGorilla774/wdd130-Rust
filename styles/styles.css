@@ -129,3 +129,86 @@ footer a:hover {
 p {
     color: #2C3E50 ;
 }
+
+#main_page2 {
+    max-width: 700px;
+    margin: 40px auto 100px;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.meal-seciton, .swaps-section {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 24px;
+    box-shadow: 2px 2px 6px #aaaaaa;
+}
+
+.chart-container {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 32px;
+}
+
+.pie-chart {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    background: conic-gradient(
+        #4CAF50 0% 50%,
+        #E53935 50% 75%,
+        #F9A825 75% 100%
+    );
+}
+
+.chart-legend {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: #2C3E50
+}
+
+.legend-color {
+    width: 16px;
+    height: 16px;
+    border-radius: 3px;
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+.swaps-row {
+    display: flex;
+    gap: 16px;
+}
+
+.swap-box {
+    flex: 1;
+    border: 1.5px solid #4CAF50;
+    border-radius: 8px;
+    padding: 12px 14px;
+    text-align: center;
+}
+
+.swap-box p:first-child {
+    color: #888;
+    margin: 0 0 6px;
+    font-size: 13px;
+}
+
+.swap-box p:last-child {
+    color: #2C3E50;
+    font-weight: bold;
+    margin: 0;
+    font-size: 13px;
+}

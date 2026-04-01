@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" href="styles/styles.css">
+
 <head>
-    <link href="https://fonts.googleapis.com" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Meal Guide</title>
 </head>
 <body>
     <div id="wrapper">
@@ -20,31 +21,44 @@
 
         </header>
     </div>    
-    <main id="main">
-        <a class="circle_graph">
+    <main id="main_page2">
+        <section class="meal-section">
             <h3>Good Meal Choices</h3>
-            <a>
-                <img src="images/circle_graph.png" alt="Circle Graph">
-                <p>Fruits and Vegatables Percentage</p>
-                <p>Lean Proteins Percentage</p>
-                <p>Whole Grains Percentage</p>
-            </a>
-        </a>
-        <a class="smart_swap">
+            <div class="chart-container">
+                <div class ="pie-chart"></div>
+                <div class="chart-legend">
+                    <div class="legend-item">
+                        <span class="legend-color" style="background: #4CAF50;"></span>
+                        Fruits &amp; Vegetables (50%)
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-color" style="background: #E53935;"></span>
+                        Lean Proteins (25%)
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-color" style="background: #F9A825;"></span>
+                        Whole Grains (25%)
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="smart_section">
             <h3>Smart Swaps</h3>
-            <a class="box">
-                <p>White Bread</p>
-                <p>Whole Grain Bread</p>
-            </a>
-            <a class="box">
-                <p>Plain Yogurt</p>
-                <p>Plain + Fruit</p>
-            </a>
-            <a class="box">
-                <p>Chips</p>
-                <p>Nuts or Seeds</p>
-            </a>
-        </a>
+            <div class="swaps-row">
+                <div class="swap-box">
+                    <p>White Bread</p>
+                    <p>→ Whole Grain Bread</p>
+                </div>
+                <div class="swap-box">
+                    <p>Plain Yogurt</p>
+                    <p>→ Plain + Fruit</p>
+                </div>
+                <div class="swap-box">
+                    <p>Chips</p>
+                    <p>→ Nuts or Seeds</p>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
         <p>&copy;2026 Kalob Rust</p>
